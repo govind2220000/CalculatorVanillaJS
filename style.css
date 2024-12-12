@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #3b4664;
+}
+
+.calculator {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#input-box {
+  height: 120px;
+  width: 45%;
+  background-color: #181f32;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.button-container {
+  height: 400px;
+  width: 45%;
+  background-color: #252d44;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  height: 350px;
+  width: 80%;
+  background-color: inherit;
+  border: none;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* row-gap: 1px;
+  column-gap: 10px; */
+  grid-gap: 5px;
+  column-gap: 15px;
+}
+
+button {
+  height: 65%;
+  width: 95%;
+  background-color: #eae3db;
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 25%;
+  color: #3b4664;
+}
+
+.span-two {
+  grid-column: span 2;
+  width: 100%; /* Ensure full width within the grid cell */
+}
+
+.reset-button {
+  background-color: #647299;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.delete-button {
+  background-color: #647299;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.equals-button {
+  background-color: #d13f30;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+/* Media Queries for Responsiveness */ /* Medium screens (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #input-box {
+    width: 70%;
+    font-size: 30px;
+  }
+  .button-container {
+    width: 70%;
+  }
+  button {
+    font-size: 20px;
+    padding: 20px;
+  }
+} /* Small screens (phones, 480px and up) */
+@media (max-width: 480px) {
+  #input-box {
+    width: 90%;
+    font-size: 25px;
+  }
+  .button-container {
+    width: 90%;
+  }
+  button {
+    font-size: 18px;
+    padding: 15px;
+  }
+}
